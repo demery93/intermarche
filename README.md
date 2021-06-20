@@ -10,7 +10,7 @@ Each model uses different features as inputs and should be seen as a completely 
 
 <h3>Models</h3>
 <b>CNN</b>:
-This was my best performing model throughout the competition. I input the log transformed sales sequence, item mean sequence, store mean sequence, price sequence, and categorical features through embedding layers to produce all 90 predictions at once. My model architecture is inspired by Lenz Du's solution to a previos Kaggle competition (https://github.com/LenzDu/Kaggle-Competition-Favorita) and is based off of Wavenet. The trick to get this model to work for this competition was to increment my scored training values by ln(2)/2 and then use a custom loss to ignore observations equal to 0. This mimics the competition's metric.
+This was my best performing model throughout the competition. I input the log transformed sales sequence, item mean sequence, store mean sequence, price sequence, and categorical features through embedding layers to produce all 90 predictions at once. My model architecture is inspired by Lenz Du's solution to a previous Kaggle competition (https://github.com/LenzDu/Kaggle-Competition-Favorita) and is based off of Wavenet. The trick to get this model to work for this competition was to increment my scored training values by ln(2)/2 and then use a custom loss to ignore observations equal to 0. This mimics the competition's metric.
 
 
 <b>MLP</b>:
